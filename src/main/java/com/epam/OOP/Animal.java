@@ -11,7 +11,7 @@ public class Animal {
         this.hasFur = hasFur;
     }
 
-    public void getDescription(){
-        System.out.print("This animal is mostly "+color+". It has "+((numberOfPaws>1)?numberOfPaws:"a"+numberOfPaws)+" paws and "+((hasFur)?"a":"no")+" fur.");
+    public String getDescription(){
+        return "This animal is mostly "+color+". It has "+((numberOfPaws>1)?numberOfPaws:"a"+numberOfPaws)+" paws and "+((hasFur)?"a":"no")+" fur.";
     }
 }
